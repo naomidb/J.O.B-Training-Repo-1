@@ -23,37 +23,41 @@ If you are looking for the face to face guided training repository for CTS-IT Gi
 - Type `git flow init`
 - Follow prompts and accept defaults by hitting enter
 
-5) Create feature branch
+5) Set the develop branch to the upstream develop branch on GitHub
+- Type `git branch --set-upstream-to=origin/develop develop`
+- Review screen output
+
+6) Create feature branch
 - Type `git flow feature start helloworld`
 - Review screen output
 
-6) Make helloworld Python file
+7) Make helloworld Python file
 - Type `touch helloworld.py`
 - Type `nano helloworld.py`
 - In the nano editor on line 1 type `#This is my hello world program` on line 2 type `print ‘Hello World’`
 - Press ctrl O
 - Name the file helloworld.py and save
 
-7) Run the helloworld.py program to verify it works
+8) Run the helloworld.py program to verify it works
 - Type `python helloworld.py`
 - Review screen output
 
-8) Add the helloworld.py program to the repository
+9) Add the helloworld.py program to the repository
 - Type `git add helloworld.py`
 - Review screen output
 
-9) Type the commit message for the file remembering to use "with this commit, I will" to start the message
+10) Type the commit message for the file remembering to use "with this commit, I will" to start the message
 - Type `git commit -m "add strings to return hello world as output`
 - Review screen output
 
-10) Push the file to the repository
+11) Push the file to the repository
 - Type `git push`
 - Review screen output
 
-11) Close feature branch
+12) Close feature branch
 - Type `git flow feature finish`
 
-12) Go to github.com to create pull request from your forked repository branch to the develop branch of J.O.B-Training-Repo-1  
+13) Go to github.com to create pull request from your forked repository branch to the develop branch of J.O.B-Training-Repo-1  
 - Browse to github.com personal account
 - Locate [J.O.B-Training-Repo-1](https://github.com/ctsit/J.O.B-Training-Repo-1) repository
 - Click pull requests tab
@@ -61,12 +65,12 @@ If you are looking for the face to face guided training repository for CTS-IT Gi
 - Click create pull request and use the personal fork to the develop branch of [J.O.B-Training-Repo-1]https://github.com/ctsit/J.O.B-Training-Repo-1
 - Click create pull request again
 
-13) Review pull request with instructor
+14) Review pull request with instructor
 - Review changes made with pull request using Github.com interface
 - Click merge pull request
 - Click confirm merge
 
-14) Create release using gitflow
+15) Create release using gitflow
 - Type `git checkout master && git pull && git checkout develop && git pull && git fetch --tags && git tag`
 - Type `git tag`
 - Type `git flow release start 0.0.1`
